@@ -75,3 +75,63 @@
      - |-tests
        | |-api -> contain all api releated test
        | |-ui -> contain all ui releated test
+
+[PlayWright-Configuration]
+
+1. [global-config] Add Properties to playwright global Configuration
+   - use: {
+     headless: false,
+     viewport: { width:1920,height:720},
+     ignoreHTTPSErrors: true,
+     video: 'false'
+     }
+2. [local-config]
+
+   - test.use({ viewport: { width: 600, height: 900 } }); Under \*.test.spec.ts
+
+3. [Basic-Option]
+
+[Playwright-TimeOut]
+
+1. action Time out By Default "0" for indivisual action
+   - config = { use: { actionTimeout: 10000 } }
+2. Navigation Timeout
+
+   - config = { use: { navigationTimeout: 30000 } }
+   - {page.goto('/', { timeout: 30000 })}
+
+3. TestTimeout by Default its 30000ms sec its for test function,fixture,beforeEach,afterEach
+
+   - test timeout for Config
+     - const config:PlayWrightTestConfig ={
+       timeout: 5 * 60 *1000
+       }
+   - testTimeot for Single Test
+     - test('EX',asunc async ({page})={
+       test.setTimeout(1200000) // For an individual test time out
+       })
+   - change timeout from a hook or fixture
+
+     - test.beforeEach(async ({page},testinfo)=>{
+
+       testinfo.setTimeout(testinfo.timeout+30000)
+
+     })
+
+4. ExpectTimeout
+   - webfirst assertion timeout by defalut 5000ms
+   - playwright.config.ts
+     - const config:PlaywrghtTestConfig ={
+       expect:{
+       timeout: 10\*1000,
+       }
+       }
+     - for Single Assertion
+       - \*.toHaveText('Sign in',{timeout:1000})
+5. GlobalTemeout
+
+   - Paywright Support timeout for whole test run.
+
+   - config={
+     globalTimeOut: 60*60*1000
+     }
