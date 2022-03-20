@@ -135,3 +135,5 @@
    - config={
      globalTimeOut: 60*60*1000
      }
+
+[PlaywrightNavigation]
