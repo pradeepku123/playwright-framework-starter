@@ -1,3 +1,7 @@
 # Node module ignore
 
 node_modules
+test-results/
+playwright-report/
+test-results/
+playwright-report/
