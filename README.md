@@ -52,3 +52,26 @@
 6. change two properties on Global playwrigt.config.ts file
    - testDir: "./tests", -> Playwright detect teston sideNav Explorer
    - use:{ headless: false,} -> for Headed mode test Execution
+
+[Setup-test-ENV]
+
+1. We are going to Test Cypress-Real-World finace app
+2. Clone the Repo
+   - git clone https://github.com/cypress-io/cypress-realworld-app.git {pre-requsite Node Should be present}
+   - yarn install
+   - yarn start
+   - navigate https://localhost:3000
+   - UserID-Katharina_Bernier
+   - Password:- s3cret
+
+[Build-Framework]
+
+1. all our test file should kept in tests Directory
+2. all our Utility File & Page file KEpt in main Directory
+   - Create a main DIR
+     - |-main
+       | |-pages -> contains all page layer
+   - Create a tests layers
+     - |-tests
+       | |-api -> contain all api releated test
+       | |-ui -> contain all ui releated test

@@ -1,7 +1,8 @@
 # Node module ignore
 
 node_modules
-test-results/
-playwright-report/
+
+# Playwright artifact
+
 test-results/
 playwright-report/
