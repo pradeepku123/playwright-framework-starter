@@ -15,8 +15,8 @@ export class LoginPage {
     await this.page.goto("/signin");
   }
   async performLogin() {
-    await this.username.fill("Katharina_Bernier");
-    await this.password.fill("s3cret");
+    await this.username.fill(process.env.DB_USERNAME);
+    await this.password.fill(process.env.DB_PASSWORD);
     await this.submit.click();
   }
 }

@@ -136,4 +136,8 @@
      globalTimeOut: 60*60*1000
      }
 
-[PlaywrightNavigation]
+[Framework-Level-Packages-install]
+
+1. for access envirnment Variable we need to install "dotenv" & Store keyValue pair format in .env file
+   - npm i -D dotenv Which is configure in "playwright.config.ts" file
+   - create .env file & Store all Global Envirnment
