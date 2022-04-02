@@ -141,3 +141,31 @@
 1. for access envirnment Variable we need to install "dotenv" & Store keyValue pair format in .env file
    - npm i -D dotenv Which is configure in "playwright.config.ts" file
    - create .env file & Store all Global Envirnment
+
+[PlaywrightRunner-parallel]
+
+1. import { test } from '@playwright/test';
+
+   test.describe.configure({ mode: 'parallel' }); # Run all test in specific spec file run parallely
+   test.describe.configure({ mode: 'serial' }); # if we have interdependent test cases then its recomended to execute test in serial Mode
+
+[maxFailure]
+
+1. we can define max failure for test execution by Two way
+
+   - using confing Options - const config: PlaywrightTestConfig = {
+     // Limit the number of failures on CI to save resources
+     maxFailures: process.env.CI ? 10 : undefined,
+     };
+   - or by provide CLI - npx playwright test --max-failures=10 its cater only 10 max failure per run.
+
+2. We can create a test list file that will control the order of tests - first run feature-b tests, then feature-a tests.
+
+   - // test.list.ts
+     import './feature-b.spec.ts';
+     import './feature-a.spec.ts';
+     Now disable parallel execution by setting workers to one, and specify your test list file.
+     const config: PlaywrightTestConfig = {
+     workers: 1,
+     testMatch: 'test.list.ts',
+     };
