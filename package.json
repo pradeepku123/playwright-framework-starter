@@ -4,7 +4,7 @@
   "description": "[PRE-REQUISITE]",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test --browser=chromium"
+    "test": "playwright test --browser=chromium && playwright show-report"
   },
   "keywords": [],
   "author": "",
