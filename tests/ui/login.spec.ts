@@ -1,11 +1,9 @@
-import { test, expect } from "@playwright/test";
-import { LoginPage } from "@pages/login.page";
-test("Login to Application", async ({ page }) => {
-  const loginPage = new LoginPage(page);
+import { test, expect } from "@config/page.config";
+test("Login to Application", async ({ loginPage, page }) => {
   await loginPage.goto();
   await loginPage.performLogin();
   await expect(page.locator('[data-test="sidenav-user-full-name"]')).toHaveText(
     "Edgar J"
   );
-  await page.waitForTimeout(3000);
+  // await page.waitForTimeout(3000);
 });
