@@ -1,4 +1,5 @@
 import { Page, Locator } from "@playwright/test";
+import { signup } from "@test_data/signup.test_data";
 export class SignupPage {
   readonly page: Page;
   readonly firstName: Locator;
@@ -21,8 +22,11 @@ export class SignupPage {
     await this.page.goto("/signup");
   }
   async performSignUp() {
-    await this.username.fill(process.env.DB_USERNAME);
-    await this.password.fill(process.env.DB_PASSWORD);
+    await this.firstName.fill(signup.firstName);
+    await this.lastName.fill(signup.lastName);
+    await this.username.fill(signup.username);
+    await this.password.fill(signup.password);
+    await this.cnfPassword.fill(signup.password);
     await this.signup.click();
   }
 }

@@ -13,5 +13,7 @@
     "@playwright/test": "^1.21.1",
     "dotenv": "^16.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@faker-js/faker": "^6.2.0"
+  }
 }

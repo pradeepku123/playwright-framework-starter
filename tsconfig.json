@@ -6,6 +6,10 @@
     "sourceMap": true,
     "outDir": "../tests-out",
     "baseUrl": ".",
-    "paths": { "@pages/*": ["main/pages/*"], "@config/*": ["main/config/*"] }
+    "paths": {
+      "@pages/*": ["main/pages/*"],
+      "@config/*": ["main/config/*"],
+      "@test_data/*": ["main/test_data/*"],
+    }
   }
 }
