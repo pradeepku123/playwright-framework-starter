@@ -1,5 +1,6 @@
 import { test, expect } from "@config/page.config";
-test("Login to Application", async ({ loginPage, page }) => {
+test("Login to Application", async ({ loginPage, page, logger }) => {
+  logger.warn("Started");
   await loginPage.goto();
   await loginPage.performLogin();
   await expect(page.locator('[data-test="sidenav-user-full-name"]')).toHaveText(
