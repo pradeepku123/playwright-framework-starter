@@ -1,11 +1,8 @@
 import { test, expect } from "@playwright/test";
+import { loginAPIBody } from "@api_body/api-body";
 test("Login to Application Using API", async ({ request }) => {
   const loginUser = await request.post(`${process.env.API_URL}/login`, {
-    data: {
-      type: "login",
-      username: "Katharina_Bernier",
-      password: "s3cret",
-    },
+    data: loginAPIBody,
   });
   const apiRES = JSON.parse(await loginUser.text());
   console.log(apiRES);
