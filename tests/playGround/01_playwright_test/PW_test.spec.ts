@@ -2,11 +2,11 @@ import { test, expect } from "@playwright/test";
 /**
  * Every test Block Mainly contians Hooks Functions
  */
-test("Playwright Test1", async ({ page }, testinfo) => {
+test("Playwright Test1", async ({}, testinfo) => {
   console.log(testinfo.title);
 });
 //test bock 2nd
-test("Playwright Test2", async ({ page }, testinfo) => {
+test.only("Playwright Test2", async ({}, testinfo) => {
   console.log(testinfo.title);
 });
 
@@ -26,4 +26,10 @@ test.beforeAll(async () => {
 
 test.afterEach(async () => {
   console.log("test.afterEach");
+});
+
+//test.beforeEach(); |- Execute before each test
+
+test.beforeEach(async () => {
+  console.log("test.beforeEach");
 });
