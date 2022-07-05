@@ -7,17 +7,16 @@ import { test } from '@playwright/test';
  * 1st parameter <title> and a 2nd parameter <fn> callback function
  */
 
-test.describe('Describe Bock1', () => {
-  //Run all test case in this block parallel
-  test.describe.configure({
-    mode: 'serial',
-  });
+test.describe.only('Describe Bock1', () => {
   test('TEST001', () => {
     console.log('BLOCK1_TEST001', new Date().toISOString());
   });
   test('TEST002', () => {
     console.log('BLOCK1_TEST002', new Date().toISOString());
   });
+});
+
+test.describe.skip('Describe Bock2', () => {
   test('TEST003', () => {
     console.log('BLOCK2_TEST001', new Date().toISOString());
   });
