@@ -1,5 +1,5 @@
-import { Page, Locator } from "@playwright/test";
-import { signup } from "@test_data/signup.test_data";
+import { Page, Locator } from '@playwright/test';
+import { signup } from '@test_data/signup.test_data';
 export class SignupPage {
   readonly page: Page;
   readonly firstName: Locator;
@@ -11,15 +11,15 @@ export class SignupPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.firstName = page.locator("#firstName");
-    this.lastName = page.locator("#lastName");
-    this.username = page.locator("#username");
-    this.password = page.locator("#password");
-    this.cnfPassword = page.locator("#confirmPassword");
+    this.firstName = page.locator('#firstName');
+    this.lastName = page.locator('#lastName');
+    this.username = page.locator('#username');
+    this.password = page.locator('#password');
+    this.cnfPassword = page.locator('#confirmPassword');
     this.signup = page.locator("[data-test='signup-submit']");
   }
   async goto() {
-    await this.page.goto("/signup");
+    await this.page.goto('/signup');
   }
   async performSignUp() {
     await this.firstName.fill(signup.firstName);

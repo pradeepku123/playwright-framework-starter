@@ -1,11 +1,11 @@
 /**
  * This Module we configure POM Fixtures for the Test
  */
-import { test as base } from "@playwright/test";
-import { LoginPage } from "@pages/login.page";
-import { SignupPage } from "@pages/signup.page";
-import { logger } from "@config/logger.config";
-import { uuidVersion4 } from "@config/uuid.config";
+import { test as base } from '@playwright/test';
+import { LoginPage } from '@pages/login.page';
+import { SignupPage } from '@pages/signup.page';
+import { logger } from '@config/logger.config';
+import { uuidVersion4 } from '@config/uuid.config';
 
 //Declare Type of Fixture
 type myFixture = {
@@ -31,4 +31,4 @@ export const test = base.extend<myFixture>({
     await use(uuidVersion4);
   },
 });
-export { expect } from "@playwright/test";
+export { expect } from '@playwright/test';

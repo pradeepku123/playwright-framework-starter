@@ -1,19 +1,19 @@
-import { test } from "@playwright/test";
+import { test } from '@playwright/test';
 
 test.afterAll(async () => {
-  console.log("After All");
+  console.log('After All');
 });
 test.afterEach(async () => {
-  console.log("After Each");
+  console.log('After Each');
 });
-test("TE:001", async () => {
-  console.log("CONSOLE-TE-001");
-});
-
-test("TE:002", async () => {
-  console.log("CONSOLE-TE-002");
+test('TE:001', async () => {
+  console.log('CONSOLE-TE-001');
 });
 
-test("TE:003", async () => {
-  console.log("CONSOLE-TE-003");
+test('TE:002', async () => {
+  console.log('CONSOLE-TE-002');
+});
+
+test('TE:003', async () => {
+  console.log('CONSOLE-TE-003');
 });

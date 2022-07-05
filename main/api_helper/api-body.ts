@@ -7,7 +7,7 @@
  * POST /login
  */
 export const loginAPIBody = {
-  type: "login",
+  type: 'login',
   username: process.env.DB_USERNAME,
   password: process.env.DB_PASSWORD,
 };

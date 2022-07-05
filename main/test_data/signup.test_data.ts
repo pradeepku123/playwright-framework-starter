@@ -1,4 +1,4 @@
-import { faker } from "@faker-js/faker";
+import { faker } from '@faker-js/faker';
 /**
  * Generated Test Data for:signup page and exported
  * Create a wrapper around FackerJS
