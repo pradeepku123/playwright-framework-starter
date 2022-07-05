@@ -1,8 +1,11 @@
-## Implemented
+# indexing  
 
-1.UUID for Unique ID for Test Case or Test Automation Framework
-uuidVersion4 Available in Every Test Case like Test Fixture to Use.
+## Playwright TEST
 
-## tobe Implemented
-
-1.
+* test(title, testFunction)
+* test.afterAll(hookFunction)
+* test.beforeAll(hookFunction)
+* test.beforeEach(hookFunction)
+* test.afterEach(hookFunction)
+* test.describe(title, testFunction)
+* test.describe.configuration(options)
