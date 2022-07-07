@@ -12,7 +12,7 @@ require('dotenv').config();
  */
 const config: PlaywrightTestConfig = {
   testDir: './tests',
-  testMatch: ['PW_test_fixme.spec.ts'],
+  testMatch: ['PW_test_info.spec.ts'],
   timeout: 30 * 1000,
   workers: 1,
   expect: {
