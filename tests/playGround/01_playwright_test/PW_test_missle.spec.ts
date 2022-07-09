@@ -14,6 +14,6 @@ test('TC-001', async ({ page }) => {
     console.log('TC-001-ST03');
   });
 });
-//test.use()
+//test.use(options) explore all use option in Future
 
-//test.expect()
+//test.expect() its use in insted of expect() direct fixture
