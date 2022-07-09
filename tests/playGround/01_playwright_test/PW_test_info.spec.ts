@@ -3,5 +3,8 @@ import { test } from '@playwright/test';
 test('Test info', async ({ page, browserName }) => {
   console.log(`We are useing browser ${browserName}`);
   //Use all method as use "tesinfo" fixture
-  test.info().fixme();
+  // test.info().fixme();
+  await page.goto('http://google.com');
+  await page.type('input[name="q"]', 'playwright');
+  test.skip();
 });
