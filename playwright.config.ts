@@ -12,7 +12,7 @@ require('dotenv').config();
  */
 const config: PlaywrightTestConfig = {
   testDir: './tests',
-  testMatch: ['PW_test_info.spec.ts'],
+  testMatch: ['PW_test_skip.spec.ts'],
   timeout: 30 * 1000,
   workers: 1,
   expect: {
@@ -24,7 +24,7 @@ const config: PlaywrightTestConfig = {
     actionTimeout: 0,
     baseURL: 'http://localhost:3000',
     trace: 'off',
-    headless: false,
+    headless: true,
     viewport: {
       width: 1920,
       height: 1280,
