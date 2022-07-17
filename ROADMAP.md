@@ -1,15 +1,15 @@
-# indexing
+# TO DO
 
-## Playwright TEST
+[Playwright]
+Page -> DOC
+Page -> API
 
-- test(title, testFunction)
-- test.afterAll(hookFunction)
-- test.beforeAll(hookFunction)
-- test.beforeEach(hookFunction)
-- test.afterEach(hookFunction)
-- test.describe(title, testFunction)
-- test.describe.configuration(options)
+Locator -> DOC
+Locator -> API
 
-- test.describe.only(title, callback)
-- test.describe.parallel.only(title, callback)
-- test.describe.serial.only(title, callback)
+
+selector -> DOC
+selector -> API
+
+
+
