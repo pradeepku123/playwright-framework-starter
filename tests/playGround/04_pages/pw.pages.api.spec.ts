@@ -16,7 +16,7 @@ test('TC-001 Page.on("close")', async ({ page }) => {
 
 //page.on('console', () => {});')
 
-test.only(`TC-002 Page.on("console")`, async ({ page }) => {
+test(`TC-002 Page.on("console")`, async ({ page }) => {
   await page.goto('https://playwright.dev');
   page.on('console', (msg) => {
     console.log(msg.text(), 'TEST');
@@ -25,3 +25,13 @@ test.only(`TC-002 Page.on("console")`, async ({ page }) => {
 });
 
 // to be continued... page.check('<selector>',options)
+
+test.only(`Actions-> Check`, async ({ page }) => {
+  await page.goto('https://example.cypress.io/commands/actions');
+  // await page.check(`[class="col-xs-5"] [class='well'] [class="action-checkboxes"] [class='checkbox'] input`);
+  await page
+    .locator(`[class="col-xs-5"] [class='well'] [class="action-checkboxes"] [class='checkbox'] input`)
+    .last()
+    .check();
+  // await page.waitForTimeout(10000);
+});
