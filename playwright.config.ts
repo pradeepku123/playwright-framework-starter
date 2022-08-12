@@ -24,7 +24,7 @@ const config: PlaywrightTestConfig = {
     actionTimeout: 0,
     baseURL: 'http://localhost:3000',
     trace: 'off',
-    headless: false,
+    headless: true,
     viewport: {
       width: 1920,
       height: 1280,
