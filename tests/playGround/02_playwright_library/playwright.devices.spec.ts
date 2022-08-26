@@ -1,4 +1,4 @@
-const { firefox, webkit, devices } = require('playwright');
+const { firefox, webkit, devices } = require('@playwright/test');
 const iphone = devices['iPhone 10'];
 (async () => {
   const browser = await webkit.launch();
