@@ -11,3 +11,7 @@ playwright-report/
 
 
 logs
+
+#ignore storge_state
+
+storage_state
