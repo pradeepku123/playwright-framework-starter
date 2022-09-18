@@ -1,6 +1,8 @@
 # Node module ignore
 
 node_modules
+yarn.lock
+package-lock.json
 
 # Playwright artifact
 
@@ -15,3 +17,9 @@ logs
 #ignore storge_state
 
 storage_state
+
+#ignore allure Report
+allure-results/
+playwright-report/ 
+allure-results/
+allure-report/

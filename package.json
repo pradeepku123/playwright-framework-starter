@@ -19,6 +19,8 @@
     "winston": "^3.7.2"
   },
   "devDependencies": {
+    "allure-commandline": "^2.18.1",
+    "allure-playwright": "^2.0.0-beta.19",
     "prettier": "^2.7.1"
   }
 }
