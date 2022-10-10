@@ -1,5 +1,5 @@
 Arguments: 
-  /home/pradeep/.nvm/versions/node/v16.16.0/bin/node /usr/bin/yarn add allure-commandline -D
+  /home/pradeep/.nvm/versions/node/v16.16.0/bin/node /usr/bin/yarn install
 
 PATH: 
   //home/pradeep/.deno/bin://home/pradeep/.deno/bin:/home/pradeep/.nvm/versions/node/v16.16.0/bin:/home/pradeep/.cargo/bin:/home/pradeep/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/jvm/java-11-openjdk-amd64//bin:/usr/lib/dart/bin:/usr/local/go/bin:/usr/local/go/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: EACCES: permission denied, unlink '/home/pradeep/workstation/playwright/playwright-framework-starter/node_modules/@colors/colors/README.md'
+  Error: EACCES: permission denied, mkdir '/home/pradeep/workstation/playwright/playwright-framework-starter/node_modules/playwright-core/lib/containers'
 
 npm manifest: 
   {
@@ -32,12 +32,13 @@ npm manifest:
     "license": "ISC",
     "dependencies": {
       "@faker-js/faker": "^6.2.0",
-      "@playwright/test": "^1.25.0",
+      "@playwright/test": "^1.27.0",
       "dotenv": "^16.0.0",
       "uuid": "^8.3.2",
       "winston": "^3.7.2"
     },
     "devDependencies": {
+      "allure-commandline": "^2.18.1",
       "allure-playwright": "^2.0.0-beta.19",
       "prettier": "^2.7.1"
     }
@@ -82,6 +83,11 @@ Lockfile:
     version "18.0.3"
     resolved "https://registry.npmjs.org/@types/node/-/node-18.0.3.tgz"
     integrity sha512-HzNRZtp4eepNitP+BD6k2L6DROIDG4Q0fm4x+dwfsr6LGmROENnok75VGw40628xf+iR24WeMFcHuuBDUAzzsQ==
+  
+  allure-commandline@^2.18.1:
+    version "2.18.1"
+    resolved "https://registry.yarnpkg.com/allure-commandline/-/allure-commandline-2.18.1.tgz#c850e7bac4d19dd4dc509a583bd3f7de08202e7a"
+    integrity sha512-bB0jY00yXxROgaTkC/PTFzmT0sVuHGiOhm80onO+N/tr5MF3eQrBkwTOdvuefEWJ1NTACutvmzZSYn8o6W2evA==
   
   allure-js-commons@2.0.0-beta.19:
     version "2.0.0-beta.19"
