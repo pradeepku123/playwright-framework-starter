@@ -23,3 +23,7 @@ allure-results/
 playwright-report/ 
 allure-results/
 allure-report/
+
+
+#results
+results/

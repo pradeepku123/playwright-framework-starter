@@ -169,3 +169,22 @@
      workers: 1,
      testMatch: 'test.list.ts',
      };
+
+[Command_line_tools]
+
+   npx playwright --help
+   - install browser
+   npx playwright install
+   - install brwoser specific browsers
+   npx playwright install webkit
+   - open new pages
+   npx playwright open --device="iPhone 11" wikipedia.org
+   npx playwright open --device="Desktop Chrome" playwright.dev
+   npx playwright open --device="Desktop Firefox" playwright.dev
+   - Emulate color scheme and viewport size
+   npx playwright open --viewport-size=800,600 --color-scheme=dark twitter.com
+   - Inspect selectors
+    Playwrigt "open" and codege
+    playwright.$('text=Playwrigt')
+   - Take ScreenShot
+   npx playwright screenshot playwright.dev screenshots/myscr.jpeg
