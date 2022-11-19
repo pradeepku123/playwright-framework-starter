@@ -2,7 +2,7 @@ Arguments:
   /home/pradeep/.nvm/versions/node/v16.16.0/bin/node /usr/bin/yarn install
 
 PATH: 
-  //home/pradeep/.deno/bin://home/pradeep/.deno/bin:/home/pradeep/.nvm/versions/node/v16.16.0/bin:/home/pradeep/.cargo/bin:/home/pradeep/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/jvm/java-11-openjdk-amd64//bin:/usr/lib/dart/bin:/usr/local/go/bin:/usr/local/go/bin
+  /home/pradeep/.pyenv/shims://home/pradeep/.deno/bin://home/pradeep/.deno/bin:/home/pradeep/.cargo/bin:/home/pradeep/.nvm/versions/node/v16.16.0/bin:/home/pradeep/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/jvm/java-11-openjdk-amd64//bin:/usr/local/go/bin:/usr/local/go/bin
 
 Yarn version: 
   1.22.11
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: EACCES: permission denied, mkdir '/home/pradeep/workstation/playwright/playwright-framework-starter/node_modules/playwright-core/lib/containers'
+  Error: EACCES: permission denied, unlink '/home/pradeep/workstation/playwright/playwright-framework-starter/node_modules/@colors/colors/LICENSE'
 
 npm manifest: 
   {
@@ -32,7 +32,7 @@ npm manifest:
     "license": "ISC",
     "dependencies": {
       "@faker-js/faker": "^6.2.0",
-      "@playwright/test": "^1.27.0",
+      "@playwright/test": "^1.28.0",
       "dotenv": "^16.0.0",
       "uuid": "^8.3.2",
       "winston": "^3.7.2"
@@ -71,13 +71,13 @@ Lockfile:
     resolved "https://registry.npmjs.org/@faker-js/faker/-/faker-6.3.1.tgz"
     integrity sha512-8YXBE2ZcU/pImVOHX7MWrSR/X5up7t6rPWZlk34RwZEcdr3ua6X+32pSd6XuOQRN+vbuvYNfA6iey8NbrjuMFQ==
   
-  "@playwright/test@^1.25.0":
-    version "1.25.0"
-    resolved "https://registry.npmjs.org/@playwright/test/-/test-1.25.0.tgz"
-    integrity sha512-j4EZhTTQI3dBeWblE21EV//swwmBtOpIrLdOIJIRv4uqsLdHgBg1z+JtTg+AeC5o2bAXIE26kDNW5A0TimG8Bg==
+  "@playwright/test@^1.27.0":
+    version "1.27.0"
+    resolved "https://registry.yarnpkg.com/@playwright/test/-/test-1.27.0.tgz#a5327a4823837a718ae6fad9b1e5ff520927e834"
+    integrity sha512-L4BswoJvGkFsEHhEgzVNHBnkFB1FbnBQn3QmvTl7+AouoJQ4a8tLwZKvytdovCsNi7B5cXuRo58yGvfM5PnExw==
     dependencies:
       "@types/node" "*"
-      playwright-core "1.25.0"
+      playwright-core "1.27.0"
   
   "@types/node@*":
     version "18.0.3"
@@ -214,10 +214,22 @@ Lockfile:
     dependencies:
       fn.name "1.x.x"
   
-  playwright-core@1.25.0:
-    version "1.25.0"
-    resolved "https://registry.npmjs.org/playwright-core/-/playwright-core-1.25.0.tgz"
-    integrity sha512-kZ3Jwaf3wlu0GgU0nB8UMQ+mXFTqBIFz9h1svTlNduNKjnbPXFxw7mJanLVjqxHJRn62uBfmgBj93YHidk2N5Q==
+  playwright-core@1.27.0:
+    version "1.27.0"
+    resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.27.0.tgz#e5f9d2bc19ebdd9581a01e74f019bb91aa7cf55d"
+    integrity sha512-VBKaaFUVKDo3akW+o4DwbK1ZyXh46tcSwQKPK3lruh8IJd5feu55XVZx4vOkbb2uqrNdIF51sgsadYT533SdpA==
+  
+  playwright-core@1.28.0:
+    version "1.28.0"
+    resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.28.0.tgz#61df5c714f45139cca07095eccb4891e520e06f2"
+    integrity sha512-nJLknd28kPBiCNTbqpu6Wmkrh63OEqJSFw9xOfL9qxfNwody7h6/L3O2dZoWQ6Oxcm0VOHjWmGiCUGkc0X3VZA==
+  
+  playwright@^1.28.0:
+    version "1.28.0"
+    resolved "https://registry.yarnpkg.com/playwright/-/playwright-1.28.0.tgz#eaec2e607858bd4c0bd7434ac01042720e6a39e3"
+    integrity sha512-kyOXGc5y1mgi+hgEcCIyE1P1+JumLrxS09nFHo5sdJNzrucxPRAGwM4A2X3u3SDOfdgJqx61yIoR6Av+5plJPg==
+    dependencies:
+      playwright-core "1.28.0"
   
   prettier@^2.7.1:
     version "2.7.1"
