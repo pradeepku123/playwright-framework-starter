@@ -1,0 +1,12 @@
+[Browser]
+browser.on('disconnected')
+browser.browserType()
+browser.close()
+browser.contexts()
+browser.isConnected()
+browser.newBrowserCDPSession()
+browser.newContext(options)
+browser.newPage(options)
+browser.startTracing(page, options)
+browser.stopTracing()
+browser.version()
