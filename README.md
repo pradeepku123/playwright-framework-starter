@@ -188,3 +188,14 @@
     playwright.$('text=Playwrigt')
    - Take ScreenShot
    npx playwright screenshot playwright.dev screenshots/myscr.jpeg
+   - Take pdf
+   npx playwright pdf playwright.dev screenshots/myscr.pdf
+
+   [Debuging_Test]
+   - playwright inspector
+   
+   --debug 
+   npx playwright test --debug
+
+   - PWDEBUG for Bash
+   PWDEBUG=1 npx playwright test
