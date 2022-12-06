@@ -20,3 +20,7 @@
 - consoleMessage.location()
 - consoleMessage.text()
 - consoleMessage.type()
+
+[Dilog]
+
+- Playwright can interact with the web page dialogs such as alert, confirm, prompt as well as beforeunload confirmation.
