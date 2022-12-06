@@ -24,3 +24,4 @@
 [Dilog]
 
 - Playwright can interact with the web page dialogs such as alert, confirm, prompt as well as beforeunload confirmation.
+- Dialogs are dismissed automatically, unless there is a page.on('dialog') listener. When listener is present, it must either dialog.accept([promptText]) or dialog.dismiss() the dialog - otherwise the page will freeze waiting for the dialog, and actions like click will never finish.
