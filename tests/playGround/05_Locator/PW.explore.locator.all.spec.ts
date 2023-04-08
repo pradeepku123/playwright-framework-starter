@@ -17,9 +17,10 @@ test.only(`Locator: allInnerText() `, async ({ page, loginPage }) => {
   const dataLinks = await page.locator(`[data-test='signup']`).allInnerTexts();
   console.log(`${dataLinks}`);
   await loginPage.performLogin();
-  // await page.waitForTimeout(3000);
   await page.waitForSelector(`[role="button"]`);
   const allLinkTexts = await page.locator(`[role="button"]`).allTextContents();
+  await page.locator(`[data-test="sidenav-user-settings"]`).blur();
 
   console.log(allLinkTexts);
+  await page.waitForTimeout(3000);
 });
