@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: mcr.microsoft.com/playwright:v1.32.0-focal
+      options: --user root
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -19,8 +20,6 @@ jobs:
         run: npm install
       - name: Install dependencies
         run: npm ci
-      - name: Root Access
-        run: sudo -i
       - name: Install Playwright
         run: npx playwright install --with-deps
       - name: Run your tests
