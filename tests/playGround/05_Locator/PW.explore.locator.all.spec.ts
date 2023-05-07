@@ -12,7 +12,7 @@ test(`Locator: All()`, async ({ page }) => {
   await page.waitForTimeout(3000);
 });
 
-test(`Locator: allInnerText() `, async ({ page, loginPage }) => {
+test(`Locator: allInnerText()`, async ({ page, loginPage }) => {
   await loginPage.goto();
   const dataLinks = await page.locator(`[data-test='signup']`).allInnerTexts();
   console.log(`${dataLinks}`);
