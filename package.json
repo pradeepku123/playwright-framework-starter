@@ -8,8 +8,8 @@
     "test": "playwright test --browser=chromium",
     "format": "npx prettier --write .",
     "prepwstart": "yarn install",
-    "pwstart": "yarn playwright install && yarn playwright install-deps",
-    "postpwstart": "yarn playwright test"
+    "pwstart": "yarn playwright install",
+    "postpwstart": "yarn playwright test PW_test_describe.spec.ts"
   },
   "keywords": [],
   "author": "",
