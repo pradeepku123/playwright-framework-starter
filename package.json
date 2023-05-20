@@ -7,15 +7,15 @@
     "test:show-report": "playwright test --browser=chromium && playwright show-report",
     "test": "playwright test --browser=chromium",
     "format": "npx prettier --write .",
-    "prepwstart":"sudo npm install",
+    "prepwstart": "sudo npm install",
     "pwstart": "sudo npx playwright install",
-    "postpwstart":"npm playwright test"
+    "postpwstart": "npm playwright test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@faker-js/faker": "^14.0.0",
+    "@faker-js/faker": "^8.0.1",
     "@playwright/test": "^1.32.0",
     "dotenv": "^16.0.0",
     "uuid": "^8.3.2",
