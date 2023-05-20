@@ -8,7 +8,7 @@
     "test": "playwright test --browser=chromium",
     "format": "npx prettier --write .",
     "prepwstart": "yarn install",
-    "pwstart": "yarn playwright install && sudo yarn playwright install-deps",
+    "pwstart": "yarn playwright install --with-deps chromium",
     "postpwstart": "yarn playwright test PW_test_describe.spec.ts"
   },
   "keywords": [],
