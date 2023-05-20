@@ -16,11 +16,6 @@
     "enabled" "2.0.x"
     "kuler" "^2.0.0"
 
-"@faker-js/faker@^8.0.1":
-  "integrity" "sha512-kbh5MenpTN9U0B4QcOI1NoTPlZHniSYQ3BHbhAnPjJGAmmFqxoxTE4sGdpy7ZOO9038DPGCuhXyMkjOr05uVwA=="
-  "resolved" "https://registry.npmjs.org/@faker-js/faker/-/faker-8.0.1.tgz"
-  "version" "8.0.1"
-
 "@playwright/test@^1.32.0":
   "integrity" "sha512-GIALJVODOIrMflLV54H3Cow635OfrTwOu24ZTDyKC66uchtFX2NcCRq83cLdakMjZKYK78lODNLQSYBj2OgaTw=="
   "resolved" "https://registry.npmjs.org/@playwright/test/-/test-1.34.0.tgz"
