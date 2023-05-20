@@ -7,7 +7,7 @@
     "test:show-report": "playwright test --browser=chromium && playwright show-report",
     "test": "playwright test --browser=chromium",
     "format": "npx prettier --write .",
-    "prepwstart": "yarn install && npx playwright install-deps",
+    "prepwstart": "yarn install && yarn playwright install-deps",
     "pwstart": "yarn playwright install",
     "postpwstart": "yarn playwright test"
   },
