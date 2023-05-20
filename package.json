@@ -6,7 +6,10 @@
   "scripts": {
     "test:show-report": "playwright test --browser=chromium && playwright show-report",
     "test": "playwright test --browser=chromium",
-    "format": "npx prettier --write ."
+    "format": "npx prettier --write .",
+    "prepwstart":"sudo npm install",
+    "pwstart": "sudo npx playwright install",
+    "postpwstart":"npm playwright test"
   },
   "keywords": [],
   "author": "",
