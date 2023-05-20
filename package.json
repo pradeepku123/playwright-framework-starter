@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@faker-js/faker": "^8.1.0",
+    "@faker-js/faker": "^14.0.0",
     "@playwright/test": "^1.32.0",
     "dotenv": "^16.0.0",
     "uuid": "^8.3.2",
