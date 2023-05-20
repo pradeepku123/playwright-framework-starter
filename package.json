@@ -7,7 +7,7 @@
     "test:show-report": "playwright test --browser=chromium && playwright show-report",
     "test": "playwright test --browser=chromium",
     "format": "npx prettier --write .",
-    "prepwstart": "yarn install",
+    "prepwstart": "yarn install && npx playwright install-deps",
     "pwstart": "yarn playwright install",
     "postpwstart": "yarn playwright test"
   },
@@ -25,8 +25,5 @@
     "allure-commandline": "^2.18.1",
     "allure-playwright": "^2.0.0-beta.19",
     "prettier": "^2.7.1"
-  },
-  "engines": {
-    "node": "16.x"
   }
 }
