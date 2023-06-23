@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: EACCES: permission denied, unlink '/home/pradeep/workstation/playwright/playwright-framework-starter/node_modules/@faker-js/faker/CHANGELOG.md'
+  Error: EACCES: permission denied, unlink '/home/pradeep/workstation/playwright/playwright-framework-starter/node_modules/@colors/colors/LICENSE'
 
 npm manifest: 
   {
@@ -26,21 +26,21 @@ npm manifest:
       "test:show-report": "playwright test --browser=chromium && playwright show-report",
       "test": "playwright test --browser=chromium",
       "format": "npx prettier --write .",
-      "prepwstart": "yarn install && yarn playwright install-deps",
+      "prepwstart": "yarn install",
       "pwstart": "yarn playwright install",
-      "postpwstart": "yarn playwright test"
+      "postpwstart": "yarn playwright test PW_test_describe.spec.ts"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
       "@faker-js/faker": "^8.0.1",
-      "@playwright/test": "^1.32.0",
       "dotenv": "^16.0.0",
       "uuid": "^8.3.2",
       "winston": "^3.7.2"
     },
     "devDependencies": {
+      "@playwright/test": "^1.35.1",
       "allure-commandline": "^2.18.1",
       "allure-playwright": "^2.0.0-beta.19",
       "prettier": "^2.7.1"
@@ -74,13 +74,13 @@ Lockfile:
     "resolved" "https://registry.npmjs.org/@faker-js/faker/-/faker-8.0.1.tgz"
     "version" "8.0.1"
   
-  "@playwright/test@^1.32.0":
-    "integrity" "sha512-GIALJVODOIrMflLV54H3Cow635OfrTwOu24ZTDyKC66uchtFX2NcCRq83cLdakMjZKYK78lODNLQSYBj2OgaTw=="
-    "resolved" "https://registry.npmjs.org/@playwright/test/-/test-1.34.0.tgz"
-    "version" "1.34.0"
+  "@playwright/test@^1.34.3":
+    "integrity" "sha512-zPLef6w9P6T/iT6XDYG3mvGOqOyb6eHaV9XtkunYs0+OzxBtrPAAaHotc0X+PJ00WPPnLfFBTl7mf45Mn8DBmw=="
+    "resolved" "https://registry.npmjs.org/@playwright/test/-/test-1.34.3.tgz"
+    "version" "1.34.3"
     dependencies:
       "@types/node" "*"
-      "playwright-core" "1.34.0"
+      "playwright-core" "1.34.3"
     optionalDependencies:
       "fsevents" "2.3.2"
   
@@ -213,10 +213,10 @@ Lockfile:
     dependencies:
       "fn.name" "1.x.x"
   
-  "playwright-core@1.34.0":
-    "integrity" "sha512-fMUY1+iR6kYbJF/EsOOqzBA99ZHXbw9sYPNjwA4X/oV0hVF/1aGlWYBGPVUEqxBkGANDKMziYoOdKGU5DIP5Gg=="
-    "resolved" "https://registry.npmjs.org/playwright-core/-/playwright-core-1.34.0.tgz"
-    "version" "1.34.0"
+  "playwright-core@1.34.3":
+    "integrity" "sha512-2pWd6G7OHKemc5x1r1rp8aQcpvDh7goMBZlJv6Co5vCNLVcQJdhxRL09SGaY6HcyHH9aT4tiynZabMofVasBYw=="
+    "resolved" "https://registry.npmjs.org/playwright-core/-/playwright-core-1.34.3.tgz"
+    "version" "1.34.3"
   
   "prettier@^2.7.1":
     "integrity" "sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g=="
