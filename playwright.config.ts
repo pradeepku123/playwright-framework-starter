@@ -1,5 +1,4 @@
-import type { PlaywrightTestConfig } from '@playwright/test';
-import { devices } from '@playwright/test';
+import { defineConfig } from '@playwright/test';
 
 /**
  * Read environment variables from file.
@@ -10,7 +9,7 @@ require('dotenv').config();
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
-const config: PlaywrightTestConfig = {
+export default defineConfig({
   testDir: './tests',
   testMatch: ['*.spec.ts'],
   timeout: 10 * 1000,
@@ -33,6 +32,4 @@ const config: PlaywrightTestConfig = {
     screenshot: 'off',
     video: 'off',
   },
-};
-
-export default config;
+});
