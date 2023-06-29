@@ -4,8 +4,8 @@ import { faker } from '@faker-js/faker';
  * Create a wrapper around FackerJS
  */
 export const signup = {
-  firstName: faker.name.firstName(),
-  lastName: faker.name.lastName(),
+  firstName: faker.person.firstName(),
+  lastName: faker.person.lastName(),
   username: faker.internet.userName(),
   password: faker.internet.password(),
 };
