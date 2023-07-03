@@ -56,3 +56,49 @@
 -  await download.delete();
 
 -  await page.waitForTimeout(5000);
+
+[Expected Error]
+[File Link] tests/playwright-api/Assertions/generic.assertion.spec.ts
+*  Error: expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: MyXClass
+    Received constructor: MyClass
+
+
+      21 |   class MyClass {}
+      22 |   class MyXClass {}
+    > 23 |   expect(new MyClass()).toBeInstanceOf(MyXClass);
+         |                         ^
+      24 | });
+      25 |
+*  Error: expect(received).toBeLessThan(expected)
+
+    Expected: < 34
+    Received:   34
+
+      24 |
+    > 25 |   expect(34).toBeLessThan(34);
+         |              ^
+      26 | });
+      27 |
+*  Error: expect(received).toBeLessThanOrEqual(expected)
+
+    Expected: <= 33
+    Received:    34
+
+      24 |
+      25 |   expect(34).toBeLessThan(35);
+    > 26 |   expect(34).toBeLessThanOrEqual(33);
+         |              ^
+      27 | });
+      28 |
+* Error: expect(received).toBeNaN()
+
+    Received: 23
+
+      26 |   expect(34).toBeLessThanOrEqual(34);
+      27 |   let expt = 23;
+    > 28 |   expect(expt).toBeNaN();
+         |                ^
+      29 | });
+      30 |
