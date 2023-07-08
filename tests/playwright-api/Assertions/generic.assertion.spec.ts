@@ -29,4 +29,17 @@ test(`Generic Level Assertions`, async ({ page }) => {
 
   expt = null;
   expect(expt).toBeNull();
+
+  expect(true).toBeTruthy();
+
+  expect(undefined).toBeUndefined();
+
+  let toContainString = 'hello world!';
+
+  expect(toContainString).toContain('ello');
+  let arrExpected = [2, 3];
+  expect(new Set([1, 2, 3, 4])).toContain(2);
+  let arrVal = [{ a: 1 }, { b: 2 }, { c: 3 }];
+  expect(arrVal).toContainEqual({ a: 1 });
+  let arrO;
 });
