@@ -41,5 +41,16 @@ test(`Generic Level Assertions`, async ({ page }) => {
   expect(new Set([1, 2, 3, 4])).toContain(2);
   let arrVal = [{ a: 1 }, { b: 2 }, { c: 3 }];
   expect(arrVal).toContainEqual({ a: 1 });
-  let arrO;
+  expect('Hello, world!').toHaveLength(13);
+  let propVal = { a: 1, b: 2, c: 3 };
+  expect(propVal).toHaveProperty('a', 1);
+  let toMatchVal = `Pradeep`;
+  expect(toMatchVal).toMatch(/Pra/);
+  expect(() => {
+    throw new Error('Hello');
+  }).toThrow(/hello/);
+
+  expect(() => {
+    throw 2;
+  }).toThrowError();
 });
