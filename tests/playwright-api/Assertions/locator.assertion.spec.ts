@@ -25,5 +25,21 @@ test.describe(`Locator Assertion Test`, () => {
     await expect(page.locator(`[for="email1"]`)).toHaveAttribute(`for`, 'email1');
     await expect(page.locator(`.action-email`)).toHaveClass('form-control action-email');
     await expect(page.locator(`.action-checkboxes [type="checkbox"]`).locator(`nth=1`)).toHaveCount(1);
+    await expect(page.locator(`[href="https://on.cypress.io/type"]`).nth(0)).toHaveCSS(
+      `background-color`,
+      `rgba(0, 0, 0, 0)`
+    );
+    await expect(page.locator(`[id="navbar"]`)).toHaveId(`navbar`);
+    await expect(page.locator(`[value="Double click to edit"]`)).toHaveValue(`Double click to edit`);
+    await expect(page.locator(`[class="action-div"]`)).toHaveText(`double click to edit`, {
+      timeout: 7000,
+      ignoreCase: true,
+    });
+  });
+  test(`Locator ScreenShot Assertion`, async ({ page }) => {
+    await expect(page.locator(`[id=navbar]`)).toHaveScreenshot('hello.png', {
+      mask: [page.locator(`[href="/cypress-api"]`)],
+      maxDiffPixels: 4892,
+    });
   });
 });
