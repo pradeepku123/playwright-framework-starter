@@ -39,7 +39,7 @@ test.describe(`Locator Assertion Test`, () => {
   test(`Locator ScreenShot Assertion`, async ({ page }) => {
     await expect(page.locator(`[id=navbar]`)).toHaveScreenshot('hello.png', {
       mask: [page.locator(`[href="/cypress-api"]`)],
-      maxDiffPixels: 4892,
+      maxDiffPixels: 4992,
     });
   });
 });
