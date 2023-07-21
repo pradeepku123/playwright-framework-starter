@@ -11,6 +11,7 @@ require('dotenv').config();
  */
 export default defineConfig({
   testDir: './tests',
+  snapshotDir: './snapshots',
   testMatch: ['*.spec.ts'],
   timeout: 10 * 1000,
   workers: 1,
