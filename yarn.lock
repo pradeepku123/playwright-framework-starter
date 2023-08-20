@@ -21,13 +21,13 @@
   "resolved" "https://registry.npmjs.org/@faker-js/faker/-/faker-8.0.1.tgz"
   "version" "8.0.1"
 
-"@playwright/test@^1.36.2":
-  "integrity" "sha512-2rVZeyPRjxfPH6J0oGJqE8YxiM1IBRyM8hyrXYK7eSiAqmbNhxwcLa7dZ7fy9Kj26V7FYia5fh9XJRq4Dqme+g=="
-  "resolved" "https://registry.npmjs.org/@playwright/test/-/test-1.36.2.tgz"
-  "version" "1.36.2"
+"@playwright/test@^1.37.1":
+  "integrity" "sha512-bq9zTli3vWJo8S3LwB91U0qDNQDpEXnw7knhxLM0nwDvexQAwx9tO8iKDZSqqneVq+URd/WIoz+BALMqUTgdSg=="
+  "resolved" "https://registry.npmjs.org/@playwright/test/-/test-1.37.1.tgz"
+  "version" "1.37.1"
   dependencies:
     "@types/node" "*"
-    "playwright-core" "1.36.2"
+    "playwright-core" "1.37.1"
   optionalDependencies:
     "fsevents" "2.3.2"
 
@@ -160,10 +160,10 @@
   dependencies:
     "fn.name" "1.x.x"
 
-"playwright-core@1.36.2":
-  "integrity" "sha512-sQYZt31dwkqxOrP7xy2ggDfEzUxM1lodjhsQ3NMMv5uGTRDsLxU0e4xf4wwMkF2gplIxf17QMBCodSFgm6bFVQ=="
-  "resolved" "https://registry.npmjs.org/playwright-core/-/playwright-core-1.36.2.tgz"
-  "version" "1.36.2"
+"playwright-core@1.37.1":
+  "integrity" "sha512-17EuQxlSIYCmEMwzMqusJ2ztDgJePjrbttaefgdsiqeLWidjYz9BxXaTaZWxH1J95SHGk6tjE+dwgWILJoUZfA=="
+  "resolved" "https://registry.npmjs.org/playwright-core/-/playwright-core-1.37.1.tgz"
+  "version" "1.37.1"
 
 "prettier@^2.7.1":
   "integrity" "sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g=="
