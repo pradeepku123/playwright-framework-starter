@@ -21,20 +21,12 @@
   "resolved" "https://registry.npmjs.org/@faker-js/faker/-/faker-8.0.1.tgz"
   "version" "8.0.1"
 
-"@playwright/test@^1.37.1":
-  "integrity" "sha512-bq9zTli3vWJo8S3LwB91U0qDNQDpEXnw7knhxLM0nwDvexQAwx9tO8iKDZSqqneVq+URd/WIoz+BALMqUTgdSg=="
-  "resolved" "https://registry.npmjs.org/@playwright/test/-/test-1.37.1.tgz"
-  "version" "1.37.1"
+"@playwright/test@^1.38.0":
+  "integrity" "sha512-xis/RXXsLxwThKnlIXouxmIvvT3zvQj1JE39GsNieMUrMpb3/GySHDh2j8itCG22qKVD4MYLBp7xB73cUW/UUw=="
+  "resolved" "https://registry.npmjs.org/@playwright/test/-/test-1.38.0.tgz"
+  "version" "1.38.0"
   dependencies:
-    "@types/node" "*"
-    "playwright-core" "1.37.1"
-  optionalDependencies:
-    "fsevents" "2.3.2"
-
-"@types/node@*":
-  "integrity" "sha512-HzNRZtp4eepNitP+BD6k2L6DROIDG4Q0fm4x+dwfsr6LGmROENnok75VGw40628xf+iR24WeMFcHuuBDUAzzsQ=="
-  "resolved" "https://registry.npmjs.org/@types/node/-/node-18.0.3.tgz"
-  "version" "18.0.3"
+    "playwright" "1.38.0"
 
 "allure-commandline@^2.18.1":
   "integrity" "sha512-QKdPUgnS4q6V0MWsZl6miveuoIo84sR4+Olh0N2JY+UWawpxnXHqWcHUtHedOJx9vCewTi3nSkBUiuOuUmn6Dw=="
@@ -160,10 +152,19 @@
   dependencies:
     "fn.name" "1.x.x"
 
-"playwright-core@1.37.1":
-  "integrity" "sha512-17EuQxlSIYCmEMwzMqusJ2ztDgJePjrbttaefgdsiqeLWidjYz9BxXaTaZWxH1J95SHGk6tjE+dwgWILJoUZfA=="
-  "resolved" "https://registry.npmjs.org/playwright-core/-/playwright-core-1.37.1.tgz"
-  "version" "1.37.1"
+"playwright-core@1.38.0":
+  "integrity" "sha512-f8z1y8J9zvmHoEhKgspmCvOExF2XdcxMW8jNRuX4vkQFrzV4MlZ55iwb5QeyiFQgOFCUolXiRHgpjSEnqvO48g=="
+  "resolved" "https://registry.npmjs.org/playwright-core/-/playwright-core-1.38.0.tgz"
+  "version" "1.38.0"
+
+"playwright@1.38.0":
+  "integrity" "sha512-fJGw+HO0YY+fU/F1N57DMO+TmXHTrmr905J05zwAQE9xkuwP/QLDk63rVhmyxh03dYnEhnRbsdbH9B0UVVRB3A=="
+  "resolved" "https://registry.npmjs.org/playwright/-/playwright-1.38.0.tgz"
+  "version" "1.38.0"
+  dependencies:
+    "playwright-core" "1.38.0"
+  optionalDependencies:
+    "fsevents" "2.3.2"
 
 "prettier@^2.7.1":
   "integrity" "sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g=="
