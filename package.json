@@ -7,9 +7,9 @@
     "test:show-report": "playwright test --browser=chromium && playwright show-report",
     "test": "playwright test --browser=chromium",
     "format": "npx prettier --write .",
-    "prepwstart": "npm install && sudo npx playwright install-deps",
-    "pwstart": "npx playwright install",
-    "postpwstart": "npx playwright test"
+    "prepwstart": "yarn install",
+    "pwstart": "yarn playwright install",
+    "postpwstart": "yarn playwright test"
   },
   "keywords": [],
   "author": "",
