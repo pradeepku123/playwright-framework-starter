@@ -1,7 +1,7 @@
 const { chromium } = require('@playwright/test');
 let count = 0;
 (async () => {
-  const browser = await chromium.launch({ headless: false });
+  const browser = await chromium.launch();
   const context = await browser.newContext();
   const page = await context.newPage();
   // Explre Console Message
