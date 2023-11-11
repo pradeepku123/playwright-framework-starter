@@ -1,6 +1,5 @@
 import { test, expect } from '@config/page.config';
 test('Login to Application', async ({ loginPage, page, logger, uuidVersion4 }) => {
-  test.use([{}]);
   //Logger implementation
   logger.warn(uuidVersion4);
   await loginPage.goto();
