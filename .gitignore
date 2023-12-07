@@ -30,3 +30,6 @@ results/
 trace
 package-lock.json
 yarn.lock
+
+#IDE
+.idea/
