@@ -10,7 +10,8 @@
       "@pages/*": ["main/pages/*"],
       "@config/*": ["main/config/*"],
       "@test_data/*": ["main/test_data/*"],
-      "@api_body/*": ["main/api_helper/*"]
+      "@api_body/*": ["main/api_helper/*"],
+      "@ai/*": ["main/ai_helper/*"],
     }
   }
 }

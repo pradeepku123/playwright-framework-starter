@@ -7,6 +7,7 @@ import { SignupPage } from '@pages/signup.page';
 import { logger } from '@config/logger.config';
 import { uuidVersion4 } from '@config/uuid.config';
 import { ENV } from '@config/env.config';
+import { AiBase } from '@ai/ai.base';
 
 //Declare Type of Fixture
 type myFixture = {
@@ -15,6 +16,7 @@ type myFixture = {
   logger: typeof logger;
   uuidVersion4: typeof uuidVersion4;
   ENV: typeof ENV;
+  AiBase: AiBase;
 };
 
 // Extend base test by providing loginpage
@@ -34,6 +36,9 @@ export const test = base.extend<myFixture>({
   },
   ENV: async ({}, use) => {
     await use(ENV);
+  },
+  AiBase: async ({ page }, use) => {
+    await use(new AiBase(page));
   },
 });
 export { expect } from '@playwright/test';
