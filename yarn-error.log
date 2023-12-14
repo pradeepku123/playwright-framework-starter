@@ -1,0 +1,55 @@
+Arguments: 
+  /home/pradeep/.nvm/versions/node/v20.9.0/bin/node /usr/bin/yarn install
+
+PATH: 
+  /home/pradeep/.bun/bin:/home/pradeep/.pyenv/shims://home/pradeep/.deno/bin:/home/pradeep/Android/Sdk/platform-tools:/home/pradeep/Android/Sdk/tools/bin:/home/pradeep/Android/Sdk/tools:/home/pradeep/Android/Sdk/emulator:/home/pradeep/.bun/bin://home/pradeep/.deno/bin:/home/pradeep/Android/Sdk/platform-tools:/home/pradeep/Android/Sdk/tools/bin:/home/pradeep/Android/Sdk/tools:/home/pradeep/Android/Sdk/emulator:/home/pradeep/.cargo/bin:/home/pradeep/.nvm/versions/node/v20.9.0/bin:/home/pradeep/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/jvm/java-11-openjdk-amd64//bin:/usr/local/go/bin:/home/pradeep/.dotnet:/home/pradeep/.dotnet/tools:/usr/local/go/bin:/home/pradeep/.dotnet:/home/pradeep/.dotnet/tools
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  20.9.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/home/pradeep/workstation/playwright/playwright-framework-starter/node_modules/color-string/node_modules'
+
+npm manifest: 
+  {
+    "name": "playwright-framework-starter",
+    "version": "1.0.0",
+    "description": "[PRE-REQUISITE]",
+    "main": "index.js",
+    "scripts": {
+      "test:show-report": "playwright test --browser=chromium && playwright show-report",
+      "test": "playwright test --browser=chromium",
+      "format": "npx prettier --write .",
+      "prepwstart": "yarn install",
+      "pwstart": "yarn playwright install",
+      "postpwstart": "yarn playwright test PW_test_describe.spec.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@faker-js/faker": "^8.0.1",
+      "uuid": "^8.3.2",
+      "winston": "^3.7.2"
+    },
+    "devDependencies": {
+      "@playwright/test": "^1.40.0",
+      "@types/node": "^20.8.3",
+      "allure-commandline": "^2.18.1",
+      "allure-playwright": "^2.0.0-beta.19",
+      "dotenv": "^16.3.1",
+      "prettier": "^2.7.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
