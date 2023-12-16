@@ -30,7 +30,7 @@ export class AiBase {
     // For text-and-image input (multimodal), use the gemini-pro-vision model
     const model = this.genAI.getGenerativeModel({ model: 'gemini-pro-vision' });
 
-    const imageParts = [fileToGenerativePart(`${__dirname}/test.jpeg`, 'image/jpeg')];
+    const imageParts = [fileToGenerativePart(`${__dirname}/../../screenshots/screenshot.png`, 'image/png')];
 
     const result = await model.generateContent([prompt, ...imageParts]);
     const response = await result.response;
