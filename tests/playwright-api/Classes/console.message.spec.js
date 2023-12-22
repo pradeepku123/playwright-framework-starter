@@ -1,4 +1,4 @@
-const { chromium } = require('@playwright/test');
+/* const { chromium } = require('@playwright/test');
 let count = 0;
 (async () => {
   const browser = await chromium.launch();
@@ -16,4 +16,5 @@ let count = 0;
   page.waitForTimeout(5000); // used for Debug purpose only
   await context.close();
   await browser.close();
-})();
+})(); 
+*/

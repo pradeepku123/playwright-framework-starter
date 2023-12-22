@@ -1,4 +1,4 @@
-const { chromium } = require('@playwright/test');
+/* const { chromium } = require('@playwright/test');
 
 (async () => {
   const browser = await chromium.launch();
@@ -20,3 +20,4 @@ const { chromium } = require('@playwright/test');
   await page.waitForTimeout(2000);
   await browser.close();
 })();
+*/

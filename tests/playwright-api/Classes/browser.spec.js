@@ -1,4 +1,4 @@
-const { chromium } = require('@playwright/test');
+/* const { chromium } = require('@playwright/test');
 
 (async () => {
   const browser = await chromium.launch();
@@ -32,3 +32,4 @@ const { chromium } = require('@playwright/test');
   console.log('Browser isconnected', browser.isConnected()); // Return Boolean true if browser is connected false if not connected
   await browser.close();
 })();
+*/

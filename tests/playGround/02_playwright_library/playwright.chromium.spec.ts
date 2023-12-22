@@ -1,4 +1,4 @@
-const { chromium } = require('@playwright/test');
+/* const { chromium } = require('@playwright/test');
 //use the chromium browser
 (async () => {
   const browser = await chromium.launch();
@@ -7,3 +7,4 @@ const { chromium } = require('@playwright/test');
 
   await browser.close();
 })();
+*/
