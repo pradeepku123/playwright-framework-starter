@@ -1,5 +1,5 @@
 import { Page } from '@playwright/test';
-const { GoogleGenerativeAI } = require('@google/generative-ai');
+// const { GoogleGenerativeAI } = require('@google/generative-ai');
 const fs = require('fs');
 
 export class AiBase {
