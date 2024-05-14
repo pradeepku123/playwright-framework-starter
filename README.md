@@ -172,30 +172,37 @@
 
 [Command_line_tools]
 
-   npx playwright --help
-   - install browser
-   npx playwright install
-   - install brwoser specific browsers
-   npx playwright install webkit
-   - open new pages
-   npx playwright open --device="iPhone 11" wikipedia.org
-   npx playwright open --device="Desktop Chrome" playwright.dev
-   npx playwright open --device="Desktop Firefox" playwright.dev
-   - Emulate color scheme and viewport size
-   npx playwright open --viewport-size=800,600 --color-scheme=dark twitter.com
-   - Inspect selectors
-    Playwrigt "open" and codege
-    playwright.$('text=Playwrigt')
-   - Take ScreenShot
-   npx playwright screenshot playwright.dev screenshots/myscr.jpeg
-   - Take pdf
-   npx playwright pdf playwright.dev screenshots/myscr.pdf
+npx playwright --help
 
-   [Debuging_Test]
-   - playwright inspector
-   
-   --debug 
-   npx playwright test --debug
+- install browser
+  npx playwright install
+- install brwoser specific browsers
+  npx playwright install webkit
+- open new pages
+  npx playwright open --device="iPhone 11" wikipedia.org
+  npx playwright open --device="Desktop Chrome" playwright.dev
+  npx playwright open --device="Desktop Firefox" playwright.dev
+- Emulate color scheme and viewport size
+  npx playwright open --viewport-size=800,600 --color-scheme=dark twitter.com
+- Inspect selectors
+  Playwrigt "open" and codege
+  playwright.$('text=Playwrigt')
+- Take ScreenShot
+  npx playwright screenshot playwright.dev screenshots/myscr.jpeg
+- Take pdf
+  npx playwright pdf playwright.dev screenshots/myscr.pdf
 
-   - PWDEBUG for Bash
-   PWDEBUG=1 npx playwright test
+[Debuging_Test]
+
+- playwright inspector
+
+--debug
+npx playwright test --debug
+
+- PWDEBUG for Bash
+  PWDEBUG=1 npx playwright test
+
+[V1.44]
+
+Execute only Failed tests from last execution
+$ npx playwright test --last-failed
