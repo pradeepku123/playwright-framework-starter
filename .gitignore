@@ -33,3 +33,4 @@ yarn.lock
 
 #IDE
 .idea/
+zerostep.config.json
