@@ -20,7 +20,7 @@
     "winston": "^3.7.2"
   },
   "devDependencies": {
-    "@playwright/test": "^1.44.0",
+    "@playwright/test": "^1.56.0",
     "@types/node": "^20.8.3",
     "@zerostep/playwright": "^0.1.5",
     "allure-commandline": "^2.18.1",
